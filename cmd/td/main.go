@@ -40,6 +40,9 @@ func main() {
 			panic(err)
 		}
 		time.Sleep(time.Millisecond * 20)
+		if c == '\n' {
+			time.Sleep(time.Millisecond * 100)
+		}
 	}
 
 	// can't really figure out how to read back out.
